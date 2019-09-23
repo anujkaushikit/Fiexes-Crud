@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MVC Fixes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <script src="js/models/variable.js"></script>
+    <script src="js/models/operation.js"></script>
+    <script src="js/controllers/controller.js"></script>
+</head>
+
+<body>
+    <div class='container'>
+        <h1 class="h1 text-center">Test Paper</h1>
+        <form action="">
+            <div class="form-group">
+                <label class="control-label" for="id">ID</label>
+                <br>
+                <input class="form-control" id="id" type="text" placeholder="Enter QA ID">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="id">QA Name</label>
+                <br>
+                <input class="form-control" id="name" type="text" placeholder="Enter QA Name">
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="optionA">OptionA</label>
+                <br>
+                <input class="form-control" id="optionA" type="text" placeholder="Enter QA OptionA">
+            </div>
+            <div class="form-group">
+                <button id="add" class="btn btn-primary add">Add</button>
+                <button class="btn btn-primary delete">Delete</button>
+            </div>
+        </form>
+        <div class="print-wrapper" id="">
+
+            <table class='table table-bordered'>
+                <thead class='thead-dark'>
+                    <tr>
+                        <th>Id</th>
+                        <th>Name</th>
+                        <th>OptionA</th>
+                        <th>OptionB</th>
+                        <th>OptionC</th>
+                        <th>OptionD</th>
+                        <th>Rans</th>
+                        <th>Score</th>
+                        <th>Operations</th>
+                    </tr>
+                </thead>
+                <tbody id='questionprintingarea'>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
